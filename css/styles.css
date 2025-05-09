@@ -1,3 +1,63 @@
+/* 
+
+  Variables CSS:
+  - Define colores principales, secundarios, de texto, bordes y fondo.
+  - Incluye configuraciones de sombra, transición y bordes redondeados.
+
+  Estilos globales:
+  - Reseteo de márgenes y rellenos.
+  - Configuración de comportamiento de desplazamiento suave.
+  - Estilo base para el cuerpo con tipografía y colores.
+
+  Contenedores y enlaces:
+  - `.container`: Define un ancho máximo y centrado del contenido.
+  - `a`: Estilo para enlaces con transiciones y efectos hover.
+
+  Navegación:
+  - `#navbar`: Barra de navegación fija con sombra y fondo.
+  - `.nav-links`: Estilo para enlaces de navegación, incluye diseño responsivo.
+  - `.menu-toggle`: Botón para alternar el menú en dispositivos móviles.
+
+  Botones:
+  - `.EN_ES-btn` y `.download-btn`: Botones con estilos consistentes, efectos hover y bordes redondeados.
+
+  Encabezado:
+  - `#header`: Contenedor principal del encabezado con sombra y bordes redondeados.
+  - `.avatar`: Imagen de perfil circular con borde.
+  - `.header-info`: Información del encabezado con estilos para títulos y subtítulos.
+
+  Secciones:
+  - `.section`: Márgenes para separar secciones.
+  - `.section-title`: Títulos de sección con línea decorativa.
+  - `.section-content`: Contenedor con sombra y bordes redondeados.
+
+  Habilidades:
+  - `.skills-grid`: Diseño de cuadrícula para categorías de habilidades.
+  - `.skill-category`: Estilo para categorías de habilidades con títulos y listas.
+
+  Línea de tiempo:
+  - `.timeline`: Línea vertical con marcadores para eventos.
+  - `.timeline-item`: Elementos individuales de la línea de tiempo.
+
+  Educación:
+  - `.education-item`: Estilo para elementos de educación.
+  - `.edu-header` y `.edu-body`: Encabezados y detalles de instituciones educativas.
+
+  Proyectos:
+  - `.projects-grid`: Diseño de cuadrícula para proyectos.
+  - `.project-card`: Tarjetas de proyecto con efectos hover.
+
+  Contacto:
+  - `.contact-container`: Contenedor para métodos de contacto.
+  - `.contact-methods`: Diseño de cuadrícula para métodos de contacto.
+
+  Pie de página:
+  - `footer`: Estilo para el pie de página con texto centrado.
+
+  Responsividad:
+  - Media queries para ajustar el diseño en dispositivos con anchos mayores a 768px y 992px.
+  - Estilos específicos para navegación móvil con animaciones de apertura/cierre del menú.
+*/
 :root {
     --primary-color: #1a73e8;
     --primary-light: #e8f0fe;
