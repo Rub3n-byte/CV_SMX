@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruben Rigol - Administrador de Sistemas</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+<body>
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <div class="Languajes">
+          <a href="../index.html" class="EN_ES-btn" id="EN_ES">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe" data-lov-id="src/pages/Index.tsx:85:16" data-lov-name="Globe" data-component-path="src/pages/Index.tsx" data-component-line="85" data-component-file="Index.tsx" data-component-name="Globe" data-component-content="%7B%7D">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+              <path d="M2 12h20"></path>
+            </svg>
+            EN/ES
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="#about" class="nav-link">Sobre mi</a>
+          <a href="#skills" class="nav-link">Habilidades</a>
+          <a href="#experience" class="nav-link">Experiencia</a>
+          <a href="#education" class="nav-link">Educación</a>
+          <a href="#projects" class="nav-link">Projectos</a>
+          <a href="#contact" class="nav-link">Contacto</a>
+        </div>
+
+        <div class="menu-toggle">☰</div>
+
+        <a href="#" class="download-btn" id="download-cv">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Descargar CV
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', function() {
+        navLinks.style.display = (navLinks.style.display === 'block') ? 'none' : 'block';
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+});
+  </script>
+
+  <div class="container">
+    <!-- Header -->
+    <header id="header">
+      <div class="header-content">
+        <div class="avatar">
+          <img src="../img/foto.png" alt="Me">
+        </div>
+        <div class="header-info">
+          <h1>Ruben Rigol</h1>
+          <h2>Administrador de Sistemas Junior</h2>
+          <p>
+            Estudiante apasionado de informática que busca una oportunidad para adquirir experiencia práctica y aplicar mis conocimientos en un entorno profesional. Mi objetivo es crecer tanto personal como profesionalmente mientras aporto valor a la empresa.
+          </p>
+          <div class="tags">
+            <span class="tag">Administrador Linux</span>
+            <span class="tag">Seguridad en la red</span>
+            <span class="tag">Automatización</span>
+          </div>
+          <div class="contact-links">
+            <div class="contact-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Barcelona, Cataluña</span>
+            </div>
+            <div class="contact-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:rrubenbuenaventura@gmail.com">rrubenbuenaventura@gmail.com</a>
+            </div>
+            <div class="contact-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a href="tel:+34612545200">612 54 52 00</a>
+            </div>
+            <div class="contact-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <a href="https://linkedin.com/in/ruben-rigol-peña-7bb448241" target="_blank">linkedin.com/in/ruben-rigol-peña</a>
+            </div>
+            <div class="contact-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              <a href="https://github.com/Rub3n-byte" target="_blank">github.com/Rub3n-byte</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Me -->
+    <section id="about" class="section">
+      <h2 class="section-title">How I am</h2>
+      <div class="section-content">
+        <p>
+          Soy un estudiante apasionado de informática con ganas de adquirir experiencia práctica y aplicar mis conocimientos en un entorno profesional. Estoy altamente motivado para desarrollar mis habilidades técnicas, profundizar mi conocimiento del sector y contribuir significativamente al éxito de una empresa. Mi objetivo es crecer tanto personal como profesionalmente, aprendiendo continuamente y adaptándome a nuevos retos, a la vez que aporto ideas innovadoras al ámbito laboral. Me comprometo a aportar valor mediante la resolución de problemas, la colaboración y un fuerte afán de excelencia.
+        </p>
+        <iframe src="https://www.youtube.com/embed/H3IbQhZRXuY?si=1cnN1j4Qab1fRilS" frameborder="0" allowfullscreen></iframe>
+      </div>
+    <section id="about" class="section">
+        <h2 class="section-title">What I like</h2>
+        <div class="section-content">
+          <p>
+            Apasionado por la tecnología y la automatización, disfruto explorando nuevas herramientas y metodologías que optimizan la gestión e infraestructura de sistemas. Me fascina la ciberseguridad y el desarrollo de soluciones eficientes para mantener entornos estables y escalables. También tengo un gran interés en la resolución de problemas y la mejora continua, buscando siempre maneras de optimizar los procesos y garantizar la fiabilidad de los sistemas.
+          </p>
+        </div>
+      </section>
+      <section id="about" class="section">
+        <h2 class="section-title">Que hago en mi tiempo libre</h2>
+        <div class="section-content">
+          <p>
+            En mi tiempo libre, me gusta experimentar con servidores, redes y configuraciones en entornos de prueba, así como participar en comunidades tecnológicas donde comparto conocimientos y aprendo de otros profesionales. Fuera del mundo tecnológico, disfruto leyendo y estudiando historia, además de jugar videojuegos.
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Hard Skills</h2>
+      <div class="section-content">
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Sistemas Operativos</h3>
+            <ul>
+              <li>Linux (RHEL, Ubuntu, CentOS)</li>
+              <li>Windows Server 2016/2019/2022</li>
+              <li>Windows 7/8/10/11</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Plataformas en la nube</h3>
+            <ul>
+              <li>AWS (EC2, S3, CloudFormation)</li>
+              <li>Microsoft Azure</li>
+              <li>Google Cloud Platform</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Networking</h3>
+            <ul>
+              <li>TCP/IP, DNS, DHCP</li>
+              <li>Firewalls & VPNs</li>
+              <li>Load Balancing</li>
+              <li>Email Server</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Security</h3>
+            <ul>
+              <li>Auditoría de seguridad</li>
+              <li>Evaluación de vulnerabilidad</li>
+              <li>Sistemas de detección de intrusiones</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Scripting & Automation</h3>
+            <ul>
+              <li>Bash, PowerShell</li>
+              <li>Python</li>
+              <li>Ansible, Yaml</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Monitorización</h3>
+            <ul>
+              <li>Nagios, Zabbix</li>
+              <li>Grafana, Prometheus</li>
+              <li>ELK Stack</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <h2 class="section-title">Experiencia laboral</h2>
+      <div class="section-content">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="job-header">
+                <h3>Auxiliar Admninistrativo</h3>
+                <span class="company">Alta Ganma</span>
+                <span class="period">Enero/2025 - Present</span>
+              </div>
+              <ul class="job-description">
+                <li>Atención a visitantes</li>
+                <li>Control de acceso</li>
+                <li>Emision de reportes de actividad</li>
+                <li>Recepción y distribución de paquetería</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="job-header">
+                <h3>IT Support</h3>
+                <span class="company">Jesuites Sarria - Sant Ignasi</span>
+                <span class="period">Junio/2024-Diciembre/2025</span>
+              </div>
+              <ul class="job-description">
+                <li>Ayudar a los usuarios a resolver problemas técnicos relacionados con hardware, software y redes.</li>
+                <li>Instalación y configuración de equipos informáticos, software, impresoras y otros dispositivos periféricos.</li>
+                <li>Realizar actualizaciones de software y firmware para garantizar que los sistemas sean seguros y ejecuten las últimas versiones.</li>
+                <li>Monitorear el rendimiento del sistema y de la red para identificar y resolver de forma proactiva problemas potenciales antes de que afecten a los usuarios.</li>
+                <li>Realizar mantenimiento preventivo y proactivo en sistemas de red, computadoras, sistemas de impresión, firewalls, listas de distribución de Outlook, SharePoint y OneDrive.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="section-content">
+        <div class="education-item">
+          <div class="edu-header">
+            <h3>Ciclo Formativo Grado Medio: Sistemas Microinformáticos y Redes</h3>
+          <div class="edu-body">
+              <span class="period">2023-actual</span>
+              <p>Similar to Associate Degree</p>
+          </div>
+          </div>
+          <div class="institution">Jesuites Bellvitge - Joan XXIII</div>
+          <div class="Google-Maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5990.2260977765745!2d2.1047222765494245!3d41.34989647130479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498d64bd023fd%3A0x26089fc39cb352a3!2sJesu%C3%AFtes%20Bellvitge%20-%20Centre%20d&#39;Estudis%20Joan%20XXIII!5e0!3m2!1ses!2ses!4v1746796966103!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+        <div class="education-item">
+          <div class="edu-header">
+            <h3>Educación Secundaria Obligatoria</h3>
+            <div class="edu-body">
+              <span class="period">2019-2023</span>
+              <p>Equivalent to grades 7, 8, 9 of Middle School and 10 from High School</p>
+            </div>
+          </div>
+          <div class="institution">Sant Jaume FEP</div>
+          <div class="Google-Maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.1609305922902!2d2.120742476550329!3d41.370588171302025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498ed73a2a073%3A0xaccce5ba6c77dac4!2sSant%20Jaume%20de%20la%20FEP!5e0!3m2!1ses!2ses!4v1746797190819!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+        
+        <div class="certifications">
+          <h3>Certifications</h3>
+          <ul>
+            <li>Cisco Certified Network Associate (CCNA)</li>
+            <li>Microsoft Certified: Azure Administrator Associate</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+      <div class="section-content">
+        <div class="projects-grid">
+            <div class="project-card">
+              <h3>Gestion de una flota de Kubernetes</h3>
+              <div class="project-tags">
+                <span class="tag">Azure</span>
+                <span class="tag">Virtualización</span>
+                <span class="tag">DevOps</span>
+              </div>
+              <p>Diseñé e implementé la gestión automatizada de una flota de Kubernetes y prácticas de DevOps eficientes.</p>
+            </div>
+          
+          <div class="project-card">
+            <h3>Seguridad en la Red</h3>
+            <div class="project-tags">
+              <span class="tag">Securidad</span>
+              <span class="tag">Firewalls</span>
+              <span class="tag">VPN</span>
+            </div>
+            <p>
+              Diseñado una arquitectura de seguridad de red para la empresa, implementando reglas avanzadas de firewall con nftables y servidor VPN.</p>
+            </p>
+          </div>
+          
+          <div class="project-card">
+            <h3>Automatización de tareas</h3>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Automation</span>
+              <span class="tag">Backup</span>
+            </div>
+            <p>Desarrollé una solución de respaldo personalizado utilizando scripts de Python y Bash que redujo los tiempos e implementé controles de versiones e integridad..</p>
+          </div>
+          
+          <div class="project-card">
+            <h3>Sistemas de Monitorización de red</h3>
+            <div class="project-tags">
+              <span class="tag">Grafana</span>
+              <span class="tag">Prometheus</span>
+              <span class="tag">Alerting</span>
+            </div>
+            <p>Implementé un sistema de monitoreo integral utilizando Prometheus y Grafana con paneles personalizados y alertas para métricas críticas del sistema.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="section-content">
+        <div class="contact-container">
+          <div class="contact-methods">
+            <div class="contact-method">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:rrubenbuenaventura@gmail.com">rrubenbuenaventura@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-method">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <div>
+                <h3>Phone</h3>
+                <a href="tel:+34612545200">612 54 52 00</a>
+              </div>
+            </div>
+            <div class="contact-method">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <div>
+                <h3>LinkedIn</h3>
+                <a href="https://linkedin.com/in/ruben-rigol-peña-7bb448241" target="_blank">linkedin.com/in/ruben-rigol-peña</a>
+              </div>
+            </div>
+            <div class="contact-method">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              <div>
+                <h3>GitHub</h3>
+                <a href="https://github.com/Rub3n-byte" target="_blank">github.com/Rub3n-byte</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="container">
+      <p>© 2025 Ruben Rigol - Junior System Administrator</p>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    let downloadBtn = document.getElementById('download-cv');
+    if (downloadBtn) {
+        downloadBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            let link = document.createElement('a');
+            link.href = '../CV_Ruben_Rigol.pdf';
+            link.download = 'CV_Ruben_Rigol.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    }
+});
+  </script>
+</body>
+</html>
